@@ -1,4 +1,4 @@
-Boostrap: docker
+Bootstrap: docker
 From: gmichiels/python-client-base:latest
 
 %setup
