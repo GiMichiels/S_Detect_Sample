@@ -1,0 +1,92 @@
+{
+    "command-line": "[CYTOMINE_HOST] [CYTOMINE_PUBLIC_KEY] [CYTOMINE_PRIVATE_KEY] [CYTOMINE_ID_PROJECT] [CYTOMINE_ID_SOFTWARE] [CYTOMINE_MAX_IMAGE_SIZE] [CYTOMINE_ERODE_ITERATIONS] [CYTOMINE_DILATE_ITERATIONS] [CYTOMINE_ATHRESHOLD_CONSTANT] [CYTOMINE_ATHRESHOLD_BLOCKSIZE]",
+    "container-image": {
+        "image": "",
+        "index": "shub",
+        "type": "singularity"
+    },
+    "default-processing-server-name": "local-container",
+    "description": "Test detect",
+    "inputs": [
+        {
+            "id": "cytomine_id_software",
+            "name": "cytomine_id_software",
+            "optional": false,
+            "set-by-server": true,
+            "type": "number",
+            "value-key": "[CYTOMINE_ID_SOFTWARE]"
+        },
+        {
+            "id": "cytomine_id_project",
+            "name": "cytomine_id_project",
+            "optional": false,
+            "set-by-server": true,
+            "type": "number",
+            "value-key": "[CYTOMINE_ID_PROJECT]"
+        },
+        {
+            "id": "cytomine_max_image_size",
+            "name": "cytomine_max_image_size",
+            "default-value": 0,
+            "optional": false,
+            "set-by-server": false,
+            "type": "number",
+            "value-key": "[CYTOMINE_MAX_IMAGE_SIZE]"
+        },
+        {
+            "id": "cytomine_erode_iterations",
+            "name": "cytomine_erode_iterations",
+            "default-value": 0,
+            "optional": false,
+            "set-by-server": false,
+            "type": "number",
+            "value-key": "[CYTOMINE_ERODE_ITERATIONS]"
+        },
+        {
+            "id": "cytomine_dilate_iterations",
+            "name": "cytomine_dilate_iterations",
+            "default-value": 0,
+            "optional": false,
+            "set-by-server": false,
+            "type": "number",
+            "value-key": "[CYTOMINE_DILATE_ITERATIONS]"
+        },
+        {
+            "id": "cytomine_athreshold_constant",
+            "name": "cytomine_athreshold_constant",
+            "default-value": 0,
+            "optional": false,
+            "set-by-server": false,
+            "type": "number",
+            "value-key": "[CYTOMINE_ATHRESHOLD_CONSTANT]"
+        },
+        {
+            "id": "cytomine_athreshold_blocksize",
+            "name": "cytomine_athreshold_blocksize",
+            "default-value": 0,
+            "optional": false,
+            "set-by-server": false,
+            "type": "number",
+            "value-key": "[CYTOMINE_ATHRESHOLD_BLOCKSIZE]"
+        }
+    ],
+    "invocation-schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "additionalProperties": false,
+        "dependencies": {},
+        "description": "Invocation schema for cytomine-template.",
+        "properties": {
+            "cytomine_host": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "cytomine_host"
+        ],
+        "title": "Cytomine-template.invocationSchema",
+        "type": "object"
+    },
+    "name": "Test-detect",
+    "schema-version": "0.5",
+    "tool-version": "1.0"
+}
