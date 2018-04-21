@@ -1,8 +1,8 @@
 {
     "command-line": "[CYTOMINE_HOST] [CYTOMINE_PUBLIC_KEY] [CYTOMINE_PRIVATE_KEY] [CYTOMINE_ID_PROJECT] [CYTOMINE_ID_SOFTWARE] [CYTOMINE_MAX_IMAGE_SIZE] [CYTOMINE_ERODE_ITERATIONS] [CYTOMINE_DILATE_ITERATIONS] [CYTOMINE_ATHRESHOLD_CONSTANT] [CYTOMINE_ATHRESHOLD_BLOCKSIZE]",
     "container-image": {
-        "image": "GiMichiels/S_Detect_Sample",
-        "index": "shub",
+        "image": "gmichiels/s_detect_sample",
+        "index": "docker",
         "type": "singularity"
     },
     "default-processing-server-name": "local-container",
