@@ -27,7 +27,7 @@ import sys
 
 # from cytomine_utilities import *
 from cytomine import cytomine, models, CytomineJob
-from cytomine.models import Job
+from cytomine.models import Job, ImageInstance
 
 from cytomine.utilities.geometry import ObjectFinder
 
