@@ -170,7 +170,7 @@ def main(argv):
 
 
         #Dump images from project
-        print("---------------------------------- DUMP images from project %d -------------------------------------------------" %cj.project)
+        #print("---------------------------------- DUMP images from project %d -------------------------------------------------" %cj.project)
         images = ImageInstance().dump(dest_pattern = "images/{id}.jpg", override = True, max_size = parameters['cytomine_max_image_size'])
 
         #Process each image to detect sample
