@@ -161,7 +161,7 @@ def main(argv):
         #id_software = parameters['cytomine_id_software']
         #print("id software : %d" %id_software)
         #software = conn.get_software(id_software)
-        #idProject = parameters['cytomine_id_project']
+        idProject = parameters['cytomine_id_project']
         #idTerm = ['cytomine_id_predicted_term']
         #project = conn.get_project(idProject)
         #ontology = conn.get_ontology(project.ontology)
@@ -171,7 +171,7 @@ def main(argv):
 
         #Dump images from project
         #print("---------------------------------- DUMP images from project %d -------------------------------------------------" %cj.project)
-        images = ImageInstance().dump(dest_pattern = "images/{id}.jpg", override = True, max_size = parameters['cytomine_max_image_size'])
+        images = ImageInstance(id_project = idProject).dump(dest_pattern = "images/{id}.jpg", override = True, max_size = parameters['cytomine_max_image_size'])
 
         #Process each image to detect sample
         i = 0
