@@ -158,15 +158,15 @@ def main(argv):
 
 
         #Initialize parameters
-        id_software = parameters['cytomine_id_software']
-        print("id software : %d" %id_software)
-        software = conn.get_software(id_software)
-        idProject = parameters['cytomine_id_project']
-        idTerm = ['cytomine_id_predicted_term']
-        project = conn.get_project(idProject)
-        ontology = conn.get_ontology(project.ontology)
-        terms = conn.get_terms(project.ontology)
-        idSoftware = parameters['cytomine_id_software']
+        #id_software = parameters['cytomine_id_software']
+        #print("id software : %d" %id_software)
+        #software = conn.get_software(id_software)
+        #idProject = parameters['cytomine_id_project']
+        #idTerm = ['cytomine_id_predicted_term']
+        #project = conn.get_project(idProject)
+        #ontology = conn.get_ontology(project.ontology)
+        #terms = conn.get_terms(project.ontology)
+        #idSoftware = parameters['cytomine_id_software']
 
 
         #Dump images from project
