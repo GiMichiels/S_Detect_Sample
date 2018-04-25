@@ -27,7 +27,7 @@
         {
             "id": "cytomine_max_image_size",
             "name": "cytomine_max_image_size",
-            "default-value": 0,
+            "default-value": 1000,
             "optional": false,
             "set-by-server": false,
             "type": "number",
@@ -36,7 +36,7 @@
         {
             "id": "cytomine_erode_iterations",
             "name": "cytomine_erode_iterations",
-            "default-value": 0,
+            "default-value": 3,
             "optional": false,
             "set-by-server": false,
             "type": "number",
@@ -45,7 +45,7 @@
         {
             "id": "cytomine_dilate_iterations",
             "name": "cytomine_dilate_iterations",
-            "default-value": 0,
+            "default-value": 3,
             "optional": false,
             "set-by-server": false,
             "type": "number",
@@ -54,7 +54,7 @@
         {
             "id": "cytomine_athreshold_constant",
             "name": "cytomine_athreshold_constant",
-            "default-value": 0,
+            "default-value": 5,
             "optional": false,
             "set-by-server": false,
             "type": "number",
@@ -63,7 +63,7 @@
         {
             "id": "cytomine_athreshold_blocksize",
             "name": "cytomine_athreshold_blocksize",
-            "default-value": 0,
+            "default-value": 551,
             "optional": false,
             "set-by-server": false,
             "type": "number",
