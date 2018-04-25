@@ -171,8 +171,17 @@ def main(argv):
 
         #Dump images from project
         #print("---------------------------------- DUMP images from project %d -------------------------------------------------" %cj.project)
-        images = ImageInstance(id_project = idProject).dump(dest_pattern = "images/{id}.jpg", override = True, max_size = parameters['cytomine_max_image_size'])
+	image_instances = ImageInstanceCollection().fetch_with_filter("project", idProject)
+	for image in image_instances:
+            print("Image ID: {} | Width: {} | Height: {} | Resolution: {} | Magnification: {} | Filename: {}".format(
+                image.id, image.width, image.height, image.resolution, image.magnification, image.filename
+            ))
 
+            if params.download_path:
+                # We will dump the images in a specified directory.
+                # Attributes of ImageInstance are parsed in the filename
+                image.dump(dest_pattern = "images/{id}.jpg", override = True, max_size = parameters['cytomine_max_image_size'])
+	
         #Process each image to detect sample
         i = 0
         geometries = []
